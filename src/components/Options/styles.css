@@ -1,0 +1,19 @@
+.options__list{
+    display: flex;
+    align-items: center;
+}
+
+.options__item{
+    margin-right: 2px;
+}
+
+.options__item.active .options__button{
+    background: blue;
+    color: #fff;
+}
+
+.options__button{
+    color: black;
+    border-color: black;
+    padding: 10px 15px;
+}

@@ -1,0 +1,23 @@
+.item{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item__content{
+    display: flex;
+    padding: 10px 10px;
+    border: 1px solid black;
+    flex:1;
+}
+
+.item--checked .item__title{
+ text-decoration: line-through;
+}
+
+.item:last-child{
+    margin-bottom: 0;
+}
+
+.item__checkbox{
+    margin-right:15px;
+}
