@@ -1,3 +1,7 @@
+.options{
+    margin-bottom: 20px;
+}
+
 .options__list{
     display: flex;
     align-items: center;

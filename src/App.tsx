@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 
-import { Title } from "./components/Title";
+import { Title } from "./UI/Title";
 import { Options } from "./components/Options";
 import { Item as ItemBlock } from "./components/Item";
 

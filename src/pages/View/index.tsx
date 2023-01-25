@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Checkbox } from "../../components/Checkbox";
-import { Title } from "../../components/Title";
+import { Title } from "../../UI/Title";
 import { Button } from "../../UI/Button";
 
 import "./styles.css";
@@ -29,7 +29,7 @@ export const View: React.FC<ViewProps> = ({
     <div className="view">
       <div className="view__header">
         <Title title={`Task #${activeItem?.id}`} />
-        <Button title="Back to" onClick={closeViewPage} />
+        <Button title="Back to TaskList" onClick={closeViewPage} />
       </div>
       <div className="view__content">
         <div className="view__text">{activeItem?.title}</div>
