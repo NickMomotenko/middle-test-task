@@ -1,5 +1,4 @@
-import React from "react";
-import { ItemBody } from '../../interface';
+import React, { useState } from "react";
 
 import { Checkbox } from "../../components/Checkbox";
 import { Title } from "../../components/Title";
@@ -7,12 +6,23 @@ import { Button } from "../../UI/Button";
 
 import "./styles.css";
 
-interface ViewProps {
-  activeItem: ItemBody | undefined;
-  closeViewPage: () => void;
-}
+import { ViewProps } from "./interface";
 
-export const View: React.FC<ViewProps> = ({ activeItem, closeViewPage }) => {
+export const View: React.FC<ViewProps> = ({
+  activeItem,
+  closeViewPage,
+  updateData,
+}) => {
+  const [isChecked, setIsChecked] = useState<boolean>(activeItem?.completed);
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const isChecked = event.target.checked;
+
+    updateData(activeItem?.id, isChecked);
+
+    isChecked ? setIsChecked(true) : setIsChecked(false);
+  };
+
   const checkboxStatus = activeItem?.completed ? "Closed" : "Opened";
 
   return (
@@ -25,7 +35,7 @@ export const View: React.FC<ViewProps> = ({ activeItem, closeViewPage }) => {
         <div className="view__text">{activeItem?.title}</div>
       </div>
       <div className="view__bottom">
-        {/* <Checkbox completed={activeItem?.completed} /> */}
+        <Checkbox onChange={handleChange} completed={activeItem?.completed} />
         <div className="view__checkbox-status">{checkboxStatus}</div>
       </div>
     </div>

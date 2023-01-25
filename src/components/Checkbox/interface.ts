@@ -1,5 +1,4 @@
 export interface CheckboxProps {
-    completed?: boolean;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  }
-  
+  completed: boolean | undefined;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}

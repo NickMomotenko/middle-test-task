@@ -86,7 +86,11 @@ const App = () => {
       ))}
 
       {activeItem && (
-        <View activeItem={activeItem} closeViewPage={closeViewPage} />
+        <View
+          activeItem={filteredData[activeItem?.id - 1]}
+          updateData={updateData}
+          closeViewPage={closeViewPage}
+        />
       )}
     </Container>
   );
