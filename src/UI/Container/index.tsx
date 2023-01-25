@@ -2,9 +2,7 @@ import React from "react";
 
 import "./styles.css";
 
-interface ContainerProps {
-  children: React.ReactNode;
-}
+import { ContainerProps } from "./interface";
 
 export const Container: React.FC<ContainerProps> = ({ children }) => {
   return <div className="container">{children}</div>;

@@ -1,9 +1,6 @@
 import React from "react";
 
-interface CheckboxProps {
-  completed?: boolean;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+import { CheckboxProps } from "./interface";
 
 export const Checkbox: React.FC<CheckboxProps> = ({ completed, onChange }) => {
   return (

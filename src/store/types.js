@@ -1,0 +1,6 @@
+export const CHANGE_ACTIVE = "CHANGE_ACTIVE";
+
+export const GET_TODOS = "GET_TODOS";
+export const UPDATE_FILTERED_DATA = "UPDATE_FILTERED_DATA";
+export const UPDATE_DATA = "UPDATE_DATA";
+export const SET_ACTIVE_ITEM = "SET_ACTIVE_ITEM";

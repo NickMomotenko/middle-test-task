@@ -2,11 +2,7 @@ import React, { useState } from "react";
 
 import "./styles.css";
 
-interface OptionsProps {
-  list: string[];
-  activeOption: string;
-  changeActiveOption: (title: string) => void;
-}
+import { OptionsProps } from "./interface";
 
 export const Options: React.FC<OptionsProps> = ({
   list,

@@ -1,9 +1,6 @@
 import React from "react";
 
-interface ButtonProps {
-  title: string;
-  onClick?: () => void;
-}
+import { ButtonProps } from "./interface";
 
 export const Button: React.FC<ButtonProps> = ({ title = "", onClick }) => {
   return (

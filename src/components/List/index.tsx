@@ -1,8 +1,6 @@
 import React from "react";
 
-interface ListProps {
-  children: React.ReactNode;
-}
+import { ListProps } from "./interface";
 
 export const List: React.FC<ListProps> = ({ children }) => {
   return <ul className="list">{children}</ul>;

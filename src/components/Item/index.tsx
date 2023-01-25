@@ -5,14 +5,7 @@ import "./styles.css";
 import { Checkbox } from "../Checkbox";
 import { Button } from "../../UI/Button";
 
-interface ItemProps {
-  title: string;
-  completed: boolean;
-  id: number;
-  userId?: number;
-  updateData: (id: number, isChecked: boolean) => void;
-  showItemInfo: (id: number) => void;
-}
+import { ItemProps } from "./interface";
 
 export const Item: React.FC<ItemProps> = ({
   id,

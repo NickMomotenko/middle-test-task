@@ -1,5 +1,5 @@
 import React from "react";
-import { Item } from "../../App";
+import { ItemBody } from '../../interface';
 
 import { Checkbox } from "../../components/Checkbox";
 import { Title } from "../../components/Title";
@@ -8,7 +8,7 @@ import { Button } from "../../UI/Button";
 import "./styles.css";
 
 interface ViewProps {
-  activeItem: Item | undefined;
+  activeItem: ItemBody | undefined;
   closeViewPage: () => void;
 }
 
