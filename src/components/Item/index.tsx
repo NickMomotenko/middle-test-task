@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./styles.css";
 
-import { Checkbox } from "../Checkbox";
+import { Checkbox } from "../../UI/Checkbox";
 import { Button } from "../../UI/Button";
 
 import { ItemProps } from "./interface";
