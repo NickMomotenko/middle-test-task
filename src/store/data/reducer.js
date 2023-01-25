@@ -49,5 +49,3 @@ export const dataReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export const getTodoss = (payload) => ({ type: "GET_TODOS", payload });

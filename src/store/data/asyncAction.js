@@ -1,4 +1,4 @@
-import { getTodoss } from "../data/reducer";
+import { getTodoss } from "./action";
 
 export const getTodos = () => {
   return (dispatch) => {

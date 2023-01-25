@@ -23,7 +23,7 @@ export const View: React.FC<ViewProps> = ({
     isChecked ? setIsChecked(true) : setIsChecked(false);
   };
 
-  const checkboxStatus = activeItem?.completed ? "Closed" : "Opened";
+  const checkboxStatusText = isChecked? "Closed" : "Opened";
 
   return (
     <div className="view">
@@ -36,7 +36,7 @@ export const View: React.FC<ViewProps> = ({
       </div>
       <div className="view__bottom">
         <Checkbox onChange={handleChange} completed={activeItem?.completed} />
-        <div className="view__checkbox-status">{checkboxStatus}</div>
+        <div className="view__checkbox-status">{checkboxStatusText}</div>
       </div>
     </div>
   );

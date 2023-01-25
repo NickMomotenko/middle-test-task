@@ -32,7 +32,7 @@ export const Item: React.FC<ItemProps> = ({
     <div className={isChecked ? "item item--checked" : "item"}>
       <label className="item__content">
         <div className="item__checkbox">
-          <Checkbox completed={isChecked} onChange={handleChange} />
+          <Checkbox completed={completed} onChange={handleChange} />
         </div>
         <div className="item__title">{title}</div>
       </label>

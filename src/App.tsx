@@ -10,7 +10,7 @@ import { Container } from "./UI/Container";
 
 import { View } from "./pages/View";
 
-import { getTodos } from "./store/option/action";
+import { getTodos } from "./store/data/asyncAction";
 
 import {
   CHANGE_ACTIVE,
